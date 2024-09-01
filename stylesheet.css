@@ -194,3 +194,62 @@ span.highlight {
   height: auto; /* 高度自动调整，保持图片的原始比例 */
   object-fit: cover; /* 覆盖原图，保持比例 */
 }
+
+
+.slider {
+  width: 860px;
+  display: flex;
+}
+
+.slider a:hover {
+  border: none
+}
+
+.slider img {
+  height: 250px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.slider video {
+  height: 250px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.recent-work {
+  height: 270px;
+  width: 860px;
+  padding-bottom: 35px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: 30px auto 30px 30px;
+}
+
+.recent-work::-webkit-scrollbar {
+  background: none;
+  height: 8px;
+}
+
+.recent-work::-webkit-scrollbar-track {
+  background: #eee;
+  border-radius: 4px;
+  margin-left: 240px;
+  margin-right: 240px;
+}
+
+.recent-work::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.recent-work::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.recent-block {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
