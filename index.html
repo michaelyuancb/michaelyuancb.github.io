@@ -66,18 +66,22 @@
             <heading>Recent</heading>
             
             <div class="slider recent-work">
-              
+
               <div class="recent-block">
-                <img src="images/recent/scalable-robot-learning.png">
-                <span style="width: 370px; text-align: center;">
-                  A pathway I envision for scalable robot intelligence, which forms the central theme of my research.
+                <a href="https://general-flow.github.io/">
+                  <video muted autoplay loop>
+                    <source src="images/research/roboengine.mp4" type="video/mp4">
+                  </video>
+                </a>
+                <span style="width: 390px; text-align: center;">
+                  We release RoboEngine, the first plug-and-play robot segmentation and visual augmentation models ! 
                 </span>
               </div>
 
               <div class="recent-block">
-                <img src="images/recent/tsinghua.jpg">
-                <span style="width: 320px; text-align: center;">
-                  I enrolled in Tsinghua University in August 2024! Looking forward to the story ahead!
+                <img src="images/recent/scalable-robot-learning.png">
+                <span style="width: 370px; text-align: center;">
+                  A pathway I envision for scalable robot intelligence, which forms the central theme of my research.
                 </span>
               </div>
 
@@ -89,13 +93,6 @@
                 </a>
                 <span style="width: 390px; text-align: center;">
                   Check out General Flow as a possible representation for scalable robot learning !  
-                </span>
-              </div>
-
-              <div class="recent-block">
-                <img src="images/recent/3-agi.png">
-                <span style="width: 390px; text-align: center;">
-                  I am interested in the product-market fit (PMF) and the business story for the first 2 stages of the 3 levels of AGI.
                 </span>
               </div>
 
@@ -111,7 +108,85 @@
           <br>
           (representative papers are <span style="background-color: lightyellow;">highlighted</span>)
           </p>
-          
+
+          <tr style="background-color: lightyellow;">
+            <td style="padding:10px;width:20%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='general_flow_video'>
+                  <video  width=140% muted autoplay loop>
+                  <source src="images/research/roboengine.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </td>
+            <td style="padding:10px;width:70%;vertical-align:middle">
+              <a href="https://general-flow.github.io/">
+                <papertitle>RoboEngine: Plug-and-Play Robot Data Augmentation with Semantic Robot Segmentation and Background Generation</papertitle>
+              </a>
+              <br>
+              <a class="author-color"><strong>Chengbo Yuan*</strong></a>, 
+              <a href="https://x.com/nonlinearjunkie" class="author-color">Suraj Joshi*</a>,
+              <a href="https://zst1406217.github.io//" class="author-color">Shaoting Zhu*</a>,
+              <a href="https://scholar.google.com/citations?user=dxN1_X0AAAAJ&hl=en" class="author-color">Hang Su</a>,
+              <a href="https://hangzhaomit.github.io/" class="author-color">Hang Zhao</a>,
+              <a href="https://yang-gao.weebly.com/" class="author-color">Yang Gao</a>
+              <br>
+              <a href="https://roboengine.github.io/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2503.18738">arXiv</a>
+              /
+              <a href="https://github.com/michaelyuancb/roboengine">code</a>
+              /
+              <a href="https://huggingface.co/datasets/michaelyuanqwq/roboseg">dataset</a>
+              <br>
+              <strong>In Submission, 2025</strong>
+              <p> 
+                RoboEngine is the first plug-and-play visual robot data augmentation toolkit. Users can effortlessly generate physics-aware robot scenes with few lines code. 
+                This enable training only in one scenes and visual generalizing to almost arbitrary scenes.
+              </p>
+              
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:10px;width:26%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='general_flow_video'>
+                  <video  width=140% muted autoplay loop>
+                  <source src="images/research/egomono4d.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </td>
+            <td style="padding:10px;width:70%;vertical-align:middle">
+              <a href="https://general-flow.github.io/">
+                <papertitle>Self-Supervised Monocular 4D Scene Reconstruction for Egocentric Videos</papertitle>
+              </a>
+              <br>
+              <a class="author-color"><strong>Chengbo Yuan</strong></a>, 
+              <a href="https://jc043.github.io/" class="author-color">Geng Chen</a>,
+              <a href="https://ericyi.github.io/" class="author-color">Li Yi</a>,
+              <a href="https://yang-gao.weebly.com/" class="author-color">Yang Gao</a>
+              <br>
+              <a href="https://egomono4d.github.io/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2411.09145">arXiv</a>
+              /
+              <a href="https://github.com/michaelyuancb/egomono4d">code</a>
+              /
+              <a href="https://x.com/michaelyuancb/status/1906287209369485539"> thread</a>
+              <br>
+              <strong>In Submission, 2025</strong>
+              <p> 
+                We train EgoMono4D, a fast, dense and generalizable 4D reconstruction model for egocentric videos with label-free self-supervised methods. 
+                The training is conducted sole on unlabeled videos, potentially to apply to more label-scarce fields in the future. 
+              </p>
+              
+            </td>
+          </tr>
+
           <tr style="background-color: lightyellow;">
             <td style="padding:10px;width:30%;vertical-align:middle">
               <div class="one">
@@ -140,8 +215,10 @@
               <a href="https://github.com/michaelyuancb/general_flow">code</a>
               /
               <a href="https://openreview.net/forum?id=nmEt0ci8hi">openreview</a>
+              /
+              <a href="https://x.com/ChuanWen15/status/1831542292265812238">thread</a>
               <br>
-              <strong>Conference of Robot Learning (CoRL), 2024</strong>
+              <strong>Conference on Robot Learning (CoRL), 2024</strong>
               <p> 
                 We build a 3D flow prediction model directly from large-scale RGBD human video datasets.
                 Based on this model, we achieve stable zero-shot human-to-robot skill transfer in the real world.
