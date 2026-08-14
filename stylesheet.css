@@ -459,6 +459,27 @@ span.highlight {
   text-align: left;
 }
 
+.blog-pdf-link {
+  margin: 22px 0 4px 0;
+  text-align: center;
+}
+
+.blog-pdf-link a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  color: #222222;
+  font-size: 13px;
+  font-weight: 700;
+  background: #ffffff;
+}
+
+.blog-pdf-link a:hover {
+  border-color: #2d87f5;
+  color: #2d87f5;
+}
+
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
