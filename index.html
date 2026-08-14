@@ -17,6 +17,9 @@
   </script>
 </head>
 <body>
+  <div id="site-nav"></div>
+  <script src="js/site-nav.js"></script>
+  <div id="home" class="section-anchor"></div>
   <table style="width:100%;max-width:920px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
@@ -26,7 +29,7 @@
                 <p style="text-align:center">
                   <name>Michael (Chengbo) Yuan &nbsp | &nbsp 袁承博</name>
                 </p>
-                <p class="larger-text">
+                <p class="larger-text intro-text">
                   🦊🦁🐮🐹🐰🐸🐶🐻🐨🐯
 
                   </br></br>  
@@ -62,30 +65,52 @@
             </tr>
           </tbody></table>
 
-
+          <div id="blog" class="section-anchor"></div>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <heading>Recent</heading>
-            
-            <div style="margin:30px auto 30px 30px;font-size:16px;">
-                <p style="margin:0 0 12px 0;font-size:16px;">
-                  <strong>2025.06.27:</strong> I will join <a style="font-size:inherit;" href="https://www.spirit-ai.com/en/">Spirit AI</a> as a research intern. 
-                  <!-- I will also part time working in <a style="font-size:inherit;" href="https://en.zhenfund.com/">ZhenFund</a> as a venture captial investor. -->
+            <tr>
+              <td style="padding:0px">
+                <heading>Blog</heading>
+                <p class="larger-text">
+                  Notes on research, engineering, and ideas I want to share. <a href="blog.html">Full Blog List</a>.
                 </p>
-                <p style="margin:0 0 12px 0;font-size:16px;">
-                  <strong>2026.06.21:</strong> We release <a style="font-size:inherit;" href="https://ftp1-policy.github.io/">FTP-1</a>, the first generalist foundation tactile policy for any sensors, embodiments and labs. Try our open-source model and dataset on your own!
-                </p>
-                <p style="margin:0;font-size:16px;">
-                  <strong>2026.5.21:</strong> I finished my internship at <a style="font-size:inherit;" href="https://www.sharpa.com/">Sharpa</a>, thanks for the great experience and guidance from the team!
-                </p>
-            </div>
+                <div class="blog-preview-list">
+                  <a class="blog-preview" href="blog/20260814_birth_prometheus/blog_content.html">
+                    <span class="blog-preview-media">
+                      <img src="blog/20260814_birth_prometheus/blog_cover.png" alt="Robot learning research notes illustration">
+                    </span>
+                    <span class="blog-preview-body">
+                      <span class="blog-date">2026.08.14</span>
+                      <span class="blog-preview-title">The Birth of Prometheus</span>
+                      <span class="blog-preview-text">A conceptual roadmap for building a new type of intelligent machine. Now I become Prometheus, the creator of Life.</span>
+                    </span>
+                  </a>
+                  <a class="blog-preview" href="">
+                    <span class="blog-preview-media">
+                      <img src="blog/20240123_path_to_foundation_policy/blog_cover.png" alt="Ideas and research blog illustration">
+                    </span>
+                    <span class="blog-preview-body">
+                      <span class="blog-date">2024.01.23</span>
+                      <span class="blog-preview-title">A Path towards Robotic Foundation Model</span>
+                      <span class="blog-preview-text">A framework for building generalist robotic foundation model in early stage.</span>
+                    </span>
+                  </a>
+                </div>
+              </td>
+            </tr>
         </tbody></table>
 
-        
+        <br>
+
+        <div id="research" class="section-anchor"></div>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <heading>Research</heading>
-          <p class="larger-text">
-          Here I only show representative research. For the complete list, please refer to my <a href="https://scholar.google.com/citations?user=ehrpcBwAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a>.
-          </p>
+          <tr>
+            <td colspan="2" style="padding:0px">
+              <heading>Research</heading>
+              <p class="larger-text intro-text">
+              Here I only show representative research. For the complete list, please refer to my <a href="https://scholar.google.com/citations?user=ehrpcBwAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a>.
+              </p>
+            </td>
+          </tr>
 
 
           <tr style="background-color: lightyellow;">
@@ -97,13 +122,13 @@
                 </video>
               </div>
             </td>
-            <td style="padding:10px;width:70%;vertical-align:middle">
+            <td class="research-info" style="padding:10px 16px 10px 10px;width:70%;vertical-align:middle">
               <a href="https://ftp1-policy.github.io/">
                 <papertitle>FTP-1: A Generalist Foundation Tactile Policy Across Tactile Sensors for Contact-Rich Manipulation</papertitle>
               </a>
               <br>
-              <a class="author-color"><strong>Chengbo Yuan (Project Leader)</strong></a>, 
-              <a>FTP-1 Team*</a>
+              <a class="author-color"><strong>Chengbo Yuan*</strong></a>, 
+              Zicheng Zhang*, Mingjie Zhou*, Wendi Chen, Yi Wang, Zhuoyang Liu, Dantong Niu, Shuo Wang, Hui Zhang, Wenkang Zhang, Yingdong Hu, Yuanqing Gong, Wanli Xing, Chuan Wen, Cewu Lu, Kaifeng Zhang, Yang Gao.
               <br>
               <a href="https://ftp1-policy.github.io/">project page</a>
               /
@@ -116,7 +141,7 @@
               <a href="https://www.modelscope.cn/datasets/Eureka1064/FTP-1-Dataset">dataset</a>
               <br>
               <strong>In Submission, 2026</strong>
-              <p> 
+              <p class="intro-text"> 
                 FTP-1 is the first generalist foundation tactile policy across different tactile sensors for contact-rich manipulation. Pretrained on 3000 hours of tactile manipulation across 21 tactile sensors and 26 data sources, FTP-1 learns general tactile knowledge that can even transfer to unknown sensors.
               </p>
             </td>
@@ -131,20 +156,13 @@
                 </video>
               </div>
             </td>
-            <td style="padding:10px;width:70%;vertical-align:middle">
+            <td class="research-info" style="padding:10px 16px 10px 10px;width:70%;vertical-align:middle">
               <a href="https://motiontrans.github.io/">
                 <papertitle>MotionTrans: Human VR Data Enable Motion-Level Learning for Robotic Manipulation Policies</papertitle>
               </a>
               <br>
-              <a class="author-color"><strong>Chengbo Yuan</strong></a>, 
-              <a href="https://zhourui9813.github.io/">Rui Zhou*</a>,
-              <a href="https://scholar.google.com/citations?hl=zh-CN&user=AUVUNusAAAAJ">Mengzhen Liu*</a>,
-              <a href="https://yingdong-hu.github.io/">Yingdong Hu</a>,
-              <a href="https://shengjiewang-jason.github.io/">Shengjie Wang</a>,
-              <a href="https://ericyi.github.io/">Li Yi</a>,
-              <a href="https://alvinwen428.github.io/">Chuan Wen</a>,
-              <a href="https://www.shanghangzhang.com/">Shanghang Zhang</a>,
-              <a href="https://people.iiis.tsinghua.edu.cn/~gaoyang/yang-gao.weebly.com/index.html">Yang Gao</a>
+              <a class="author-color"><strong>Chengbo Yuan*</strong></a>, 
+              Rui Zhou*, Mengzhen Liu*, Yingdong Hu, Shengjie Wang, Li Yi, Chuan Wen, Shanghang Zhang, Yang Gao.
               <br>
               <a href="https://motiontrans.github.io/">project page</a>
               /
@@ -155,12 +173,13 @@
               <a href="https://huggingface.co/datasets/michaelyuanqwq/motiontrans">dataset</a>
               <br>
               <strong>International Conference on Robotics & Automation (ICRA), 2026</strong>
-              <p> 
+              <p class="intro-text"> 
                 MotionTrans is our first framework directly transfers motions of 13 human tasks to end-to-end policies (RGB-to-Action).
                 The framework is designed at a systematic level, including data collection toolkit, human-to-robot data processing, and a weighted multi-task cotraining strategy.
               </p>
               
             </td>
+          </tr>
 
           <tr style="background-color: lightyellow;">
             <td style="padding:10px;width:26%;vertical-align:middle">
@@ -172,17 +191,13 @@
                 </div>
               </div>
             </td>
-            <td style="padding:10px;width:70%;vertical-align:middle">
+            <td class="research-info" style="padding:10px 16px 10px 10px;width:70%;vertical-align:middle">
               <a href="https://roboengine.github.io/">
                 <papertitle>RoboEngine: Plug-and-Play Robot Data Augmentation with Semantic Robot Segmentation and Background Generation</papertitle>
               </a>
               <br>
               <a class="author-color"><strong>Chengbo Yuan*</strong></a>, 
-              <a href="https://x.com/nonlinearjunkie" class="author-color">Suraj Joshi*</a>,
-              <a href="https://zst1406217.github.io//" class="author-color">Shaoting Zhu*</a>,
-              <a href="https://scholar.google.com/citations?user=dxN1_X0AAAAJ&hl=en" class="author-color">Hang Su</a>,
-              <a href="https://hangzhaomit.github.io/" class="author-color">Hang Zhao</a>,
-              <a href="https://yang-gao.weebly.com/" class="author-color">Yang Gao</a>
+              Suraj Joshi*, Shaoting Zhu*, Hang Su, Hang Zhao, Yang Gao.
               <br>
               <a href="https://roboengine.github.io/">project page</a>
               /
@@ -193,7 +208,7 @@
               <a href="https://huggingface.co/datasets/michaelyuanqwq/roboseg">dataset</a>
               <br>
               <strong>International Conference on Intelligent Robots and Systems (IROS), 2025</strong>
-              <p> 
+              <p class="intro-text"> 
                 RoboEngine is the first plug-and-play visual robot data augmentation toolkit. Users can effortlessly generate physics-aware robot scenes with few lines code. 
                 This enable training only in one scenes and visual generalizing to almost arbitrary scenes.
               </p>
@@ -211,15 +226,13 @@
                 </div>
               </div>
             </td>
-            <td style="padding:10px;width:70%;vertical-align:middle">
+            <td class="research-info" style="padding:10px 16px 10px 10px;width:70%;vertical-align:middle">
               <a href="https://egomono4d.github.io/">
                 <papertitle>Self-Supervised Monocular 4D Scene Reconstruction for Egocentric Videos</papertitle>
               </a>
               <br>
               <a class="author-color"><strong>Chengbo Yuan</strong></a>, 
-              <a href="https://jc043.github.io/" class="author-color">Geng Chen</a>,
-              <a href="https://ericyi.github.io/" class="author-color">Li Yi</a>,
-              <a href="https://yang-gao.weebly.com/" class="author-color">Yang Gao</a>
+              Geng Chen, Li Yi, Yang Gao.
               <br>
               <a href="https://egomono4d.github.io/">project page</a>
               /
@@ -230,7 +243,7 @@
               <a href="https://x.com/michaelyuancb/status/1906287209369485539"> thread</a>
               <br>
               <strong>International Conference on Computer Vision (ICCV), 2025</strong>
-              <p> 
+              <p class="intro-text"> 
                 We train EgoMono4D, a fast, dense and generalizable 4D reconstruction model for egocentric videos with label-free self-supervised methods. 
                 The training is conducted sole on unlabeled videos, potentially to apply to more label-scarce fields in the future. 
               </p>
@@ -248,15 +261,13 @@
                 </div>
               </div>
             </td>
-            <td style="padding:10px;width:70%;vertical-align:middle">
+            <td class="research-info" style="padding:10px 16px 10px 10px;width:70%;vertical-align:middle">
               <a href="https://general-flow.github.io/">
                 <papertitle>General Flow as Foundation Affordance for Scalable Robot Learning</papertitle>
               </a>
               <br>
               <a class="author-color"><strong>Chengbo Yuan</strong></a>, 
-              <a href="https://alvinwen428.github.io/" class="author-color">Chuan Wen</a>,
-              <a href="https://tongzhangthu.github.io/" class="author-color">Tong Zhang</a>,
-              <a href="https://yang-gao.weebly.com/" class="author-color">Yang Gao</a>
+              Chuan Wen, Tong Zhang, Yang Gao.
               <br>
               <a href="https://general-flow.github.io/">project page</a>
               /
@@ -269,7 +280,7 @@
               <a href="https://x.com/ChuanWen15/status/1831542292265812238">thread</a>
               <br>
               <strong>Conference on Robot Learning (CoRL), 2024</strong>
-              <p> 
+              <p class="intro-text"> 
                 We build a 3D flow prediction model directly from large-scale RGBD human video datasets.
                 Based on this model, we achieve stable zero-shot human-to-robot skill transfer in the real world.
               </p>
@@ -278,6 +289,9 @@
           </tr>
         </tbody></table>
 
+        <br>
+
+        <div id="project" class="section-anchor"></div>
         <table width="100%" align="center" border="0" cellpadding="10"><tbody>
           <br>
               <heading>Project</heading>
@@ -289,10 +303,12 @@
               <br>
               <strong> A library for asset pricing (Q-quant) based on MindSpore </strong>
               <br>
-              <a href="https://gitee.com/luweizheng/mind-quant-finance">gitee</a>
+              <a href="https://gitee.com/luweizheng/mind-quant-finance">gitee</a>, 2023
               <br>
-              This is an AI+Finance project I participated in, where we built a high-performance library for derivative pricing based on <a href="https://www.mindspore.cn/en">MindSpore</a>. 
-              It offers features such as Black-Scholes calculations, Monte Carlo simulations, and solutions to Backward SDE.
+              <p class="intro-text">
+                This is an AI+Finance project I participated in, where we built a high-performance library for derivative pricing based on <a href="https://www.mindspore.cn/en">MindSpore</a>. 
+                It offers features such as Black-Scholes calculations, Monte Carlo simulations, and solutions to Backward SDE.
+              </p>
             </td>
           </tr> 
           <tr>
@@ -302,70 +318,23 @@
               <br>
               <strong> A tabular prediction library designed for financial stock prediction. </strong>
               <br>
-              <a href="https://github.com/michaelyuancb/quant_finance_research">github</a>
+              <a href="https://github.com/michaelyuancb/quant_finance_research">github</a>, 2023
               <br>
-              This is one of the outcomes of an interesting experience, during which I worked with <a href="https://people.iiis.tsinghua.edu.cn/~jianli/">Prof. Jian Li</a> on stock prediction problems.
-              It provide rich tools for factors extraction and results prediction.
-            </td>
-          </tr>  
-          <tr>
-            <td style="padding-left:10px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/project/tao_class.png", width="150"></td>
-            <td width="90%" valign="center">
-              <papertitle class="blue-color">TaoClass: an AI-Driven Course Forum</papertitle>
-              <br>
-              <strong> A course forum powered by Large Language Models (LLMs) and Vector Databases (VD). </strong>
-              <br>
-              <a href="https://gitee.com/yuanchengbo1/whu_taoclass">gitee</a>
-              <br>
-              This is a project I led, and it also serves as the final assignment for the Software Engineering course at Wuhan University. 
-              The forum utilizes AI technology to offer natural language course selection and intelligent back-end information management.
-            </td>
-          </tr>   
-          
-        </tbody></table>
-        
-<!-- 
-        <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <br>
-            <heading>Service and Teaching</heading>
-            <br><br>
-          <td style="padding:0px;width:100%;vertical-align:middle">
-            <p>
-              <li>Reviewer: The IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR 2024)</li>
-            </p>
-            <p>
-              <li>Reviewer: 2024 IEEE Robotics and Automation Letters (RAL 2024)</li>
-            </p>
-          </td>
-        </tr>
-        </tbody></table> -->
-
-        <!-- <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <br>
-              <heading>Recent Talks</heading>
-            <br><br>
-            <td style="padding:0px;width:100%;vertical-align:middle">
-              <p>
-                <li>[August 20] Student Representative Speech at the Annual School Assembly of EECS
-                [<a href="pdf\Speech_2023_Assembly.pdf">Manuscript</a>]
-                </li>
-             </p>
-              <p>
-                 <li>[May 27] "RLAfford: End-to-End Affordance Learning for Robotic Manipulation" at Turing Student Forum (<strong>Outstanding Presentation Award</strong>)
-                 [<a href="https://www.bilibili.com/video/BV1pM4y1i77m/?spm_id_from=333.999.0.0&vd_source=29e736b58716f318ce554795bbbe6149">Video</a>]
-                 </li>
+              <p class="intro-text">
+                This is one of the outcomes of an interesting experience, during which I worked with <a href="https://people.iiis.tsinghua.edu.cn/~jianli/">Prof. Jian Li</a> on stock prediction problems.
+                It provide rich tools for factors extraction and results prediction.
               </p>
             </td>
-          </tr>
-        </tbody></table> -->
+          </tr>  
+          
+        </tbody></table>
 
         </br>
+        <div id="honor" class="section-anchor"></div>
         <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
                 <br>
-                <heading>Selected Awards and Honors</heading>
+                <heading>Honors</heading>
                 <br>
                 <br>
                 <td style="padding:0px;width:100%;vertical-align:middle">
@@ -389,6 +358,7 @@
         </tbody></table>
 
         </br>
+        <div id="gallery" class="section-anchor"></div>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <br>
@@ -431,7 +401,7 @@
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                    This template is a modification to <a href="https://gengyiran.github.io/">Yiran Geng</a>'s and <a href="https://jonbarron.info/">Jon Barron</a>'s website. 
+                    This template is a modification to <a href="https://jonbarron.info/">Jon Barron</a>'s website. 
                 </p>
               </td>
             </tr>
